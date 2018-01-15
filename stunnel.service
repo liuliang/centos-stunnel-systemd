@@ -9,6 +9,8 @@ Alias=stunnel.target
 
 [Service]
 Type=forking
+ExecStartPre=-/usr/bin/mkdir /run/stunnel
+ExecStartPre=/usr/bin/chown nobody. /run/stunnel
 ExecStart=/usr/bin/stunnel /etc/stunnel/stunnel.conf
 ExecStop=/usr/bin/killall -9 stunnel
 
