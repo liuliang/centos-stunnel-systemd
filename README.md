@@ -5,7 +5,7 @@ CentOS 7 systemd (systemctl) file to use with stunnel
 
 Save file to:
 
-    /lib/systemd/system/stunnel.service
+    /etc/systemd/system/stunnel.service
 
 Use commands like:
 
